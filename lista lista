@@ -1,0 +1,20 @@
+def cant_vc(n):
+    cantidad_vocales=0
+    cantidad_consonantes=0
+    n = n.lower()
+    
+    for letra in n:
+        if letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u":
+            cantidad_vocales += 1
+        else:
+            cantidad_consonates +=1
+    r = f"""NOMBRE:{n}
+            NUMERO de vocales: {cantidad_vocales}
+            NUMERO de consonantes: {cantidad_consonantes}
+            NUMERO de letras: {len(n)}"""
+    return r 
+lisa_nombres = []
+flag=true 
+for i in lista_nombre:
+    print(i)
+    print(cant_vc(i))
