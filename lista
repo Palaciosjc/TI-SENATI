@@ -1,0 +1,20 @@
+
+lista_nombres = []
+flag=True
+while flag:
+    nombre = input("ingresar nombres o para terminar escriva x:") 
+    if nombre == "x":  
+        flag=False
+    else: 
+        cnombre = nombre.capitalize()
+        if  cnombre in lista_nombres:
+            pass 
+        else:   
+            lista_nombres.append(cnombre)
+
+print(lista_nombres)
+print(f"la cantidad de nombres son{len(lista_nombres)}")  
+for i in lista_nombres:
+     print(f"{i} el numero de letras {len(i)}")
+
+
