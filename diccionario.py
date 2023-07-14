@@ -3,7 +3,7 @@ auto = {
     "modelo" : "hilux", 
     "numeroaccidentes": 1,
     "estado": True
-     "colores": ["negro", "gris"]
+    "colores": ["negro", "gris"],
 }
 
 
