@@ -1,12 +1,12 @@
-from productos import crearproductos
+from productos import crearproductos, listaproductos
 
 
 def menu():
     lista_de_productos=[]
 
     omenu = """
-    MINIMARKEt
-    
+    MINIMARKET
+    ___________________
     1.listar producto
     2.Agregar producto
     3.Salir
@@ -21,11 +21,17 @@ def menu():
         else:
             if opcion == 1:
                 print("listado productos")
+                listaproductos(lista_de_productos)
+
             elif opcion ==2:
                 print("agragando productos")
+                crearproductos(lista_de_productos)
             elif opcion ==3:
                 print("saliendo")  
                 flag = False
-                  
+
+
+menu()             
+
 
 
