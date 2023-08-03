@@ -1,0 +1,41 @@
+class Persona:
+    def __init__(self, nombre, genero, altura,edad, DNI):
+        self._nombre = nombre
+        self._genero = genero
+        self._altura = altura
+        self._edad = edad
+        self._DNI = DNI
+    def edad(self):
+        return 15 
+class Alumno(Persona):
+    def __init__(self, mombre, genero, dni, fecha_nacimiento, peso,altura, id_estudiante):
+        super().__init__(nombre,))
+
+
+    def correr(self, punto_llegada):
+        print(f"{self._nombre} tienes que ir a { punto_llegada}")
+        print("si llegaste detente ahi")
+
+    def dormir(self, tiempo_dormir):
+        print(f"{self._nombre}empieza a dormir { tiempo_dormir}")
+
+    def comer(self, comer_galletas):
+        print(f"{self._nombre} tienes que comer {comer_galletas}")  
+
+    def identidad(self,informacion):
+        print(f"{self._DNI} identificado con{informacion}")    
+
+  
+
+Juan  = Persona("Juan", "masculino", "1.70", "26", "48099126")
+Juan.correr("a la mesa")
+Juan.identidad("Juan su numero de dni")
+
+Fabiola  = Persona("Fabiola", "femenino","1.54", "19", "48099128")
+Fabiola.dormir("24 minutos")
+
+Ivan = Persona("ivan", "masculino", "1.75", "22", "48099157")
+Ivan.comer("2 galletas")
+
+
+               

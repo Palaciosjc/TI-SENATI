@@ -48,3 +48,19 @@ def menu():
                 flag = False
 menu()
 
+def coincidenventa(nombreproducto,cantidadproducto,costoproducto,producto_venta, marcaproducto):
+   flag = False
+   for producto in producto_venta:
+        if producto.get("nombre")== nombreproducto and producto.get("marca")== marcaproducto and producto.get("cantidad")== cantidadproducto and producto.get("costo")==costoproducto:
+            print("este producto ya esta registrado")
+            flag_repeti=coincidenventa(nombreproducto,cantidadproducto,costoproducto,producto_venta)
+        else:
+            if not flag_repeti:
+               producto_venta.append(producto)
+            producto = {}
+            pregunta = input("Desea agregar mas Productos? SI/NO")
+            if str(pregunta) != "SI":
+                flag = False
+            producto["cantidad"]=producto.get("cantidad") + cantidadproducto and producto.get("costo")+costoproducto
+            flag = True
+        return flag
